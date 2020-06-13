@@ -1146,11 +1146,11 @@ void parseDread(string dread) {
 						data[".dtotal",".dread",".total"] += 1;
 						data[".data","Dread"+zone,pn+"."+dreadNonComStr(pn,nc.group(2).to_int())] += 1;
 						switch(dreadNonComStr(pn,nc.group(2).to_int())) {
-						case "-Hot":data[".data","Dread"+zone,".hot"] = -1;data[".data","Dread"+zone,".kisses"] += 1; break;
-						case "-Spooky":data[".data","Dread"+zone,".spooky"] = -1;data[".data","Dread"+zone,".kisses"] += 1; break;
-						case "-Stench":data[".data","Dread"+zone,".stench"] = -1;data[".data","Dread"+zone,".kisses"] += 1; break;
-						case "-Cold":data[".data","Dread"+zone,".cold"] = -1;data[".data","Dread"+zone,".kisses"] += 1; break;
-						case "-Sleaze":data[".data","Dread"+zone,".sleaze"] = -1;data[".data","Dread"+zone,".kisses"] += 1; break;
+						case "-Hot":data[".data","Dread"+zone,".Hot"] = -1;data[".data","Dread"+zone,".kisses"] += 1; break;
+						case "-Spooky":data[".data","Dread"+zone,".Spooky"] = -1;data[".data","Dread"+zone,".kisses"] += 1; break;
+						case "-Stench":data[".data","Dread"+zone,".Stench"] = -1;data[".data","Dread"+zone,".kisses"] += 1; break;
+						case "-Cold":data[".data","Dread"+zone,".Cold"] = -1;data[".data","Dread"+zone,".kisses"] += 1; break;
+						case "-Sleaze":data[".data","Dread"+zone,".Sleaze"] = -1;data[".data","Dread"+zone,".kisses"] += 1; break;
 						case "-Bugbears":data[".data","DreadWoods",".tilt"] -= 1; break;
 						case "-Werewolves":data[".data","DreadWoods",".tilt"] += 1; break;
 						case "-Ghosts":data[".data","DreadVillage",".tilt"] -= 1; break;
